@@ -2,7 +2,7 @@
 We are Team- PANDAVAS, From Lovely Professional University.
 
 Members
-1.) Piyush Kachhwal - 2nd Year B.Tech ECE, LPU 2.) Abhishek Potekar - 2nd Year B.Tech ECE, LPU 3.) Gayatri Verma - 2nd Year B.Tech ECE, LPU 4.) Shrey Agrawal - 2nd Year B.Tech EEE
+1.) Piyush Kachhwal - 2nd Year B.Tech ECE, LPU 2.) Abhishek Potekar - 2nd Year B.Tech ECE, LPU 3.) Gayatri Verma - 2nd Year B.Tech ECE, LPU 
 
 
 
