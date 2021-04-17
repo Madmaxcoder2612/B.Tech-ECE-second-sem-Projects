@@ -32,7 +32,8 @@ def speak(audio):
     
     def takeCommand():
     #It takes microphone input from the user and returns the string output.
-
+    
+   
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listerning...")
@@ -58,3 +59,18 @@ def speak(audio):
         server.login('youremail@gmail.com', 'your-password-here')
         server.sendmail('youremail@gmail.com', to, content)
         server.close()
+
+        if __name__=="__main__":
+     WishMe()
+     while True:
+        #if 1:
+        query = takeCommand().lower()
+
+     # Logic for executing tasks nased on query
+        if 'wikipedia' in query:
+            speak('Searching Wikipedia...')
+            query = query.replace("wikipedia","")
+            results = wikipedia.summary(query, sentences=2)
+            speak("According to Wikipedia")
+            print(results)
+            speak(results)
