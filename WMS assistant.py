@@ -29,3 +29,17 @@ def speak(audio):
         speak("Good Evening! Sir")
 
     speak("I am JARVIS. Please tell me, How may I help you ")
+    
+    def takeCommand():
+    #It takes microphone input from the user and returns the string output.
+
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listerning...")
+        r.pause_threshold = 1
+        audio = r.listen(source)
+
+    try:
+        print("Recognizing...")
+        query = r.recognize_google(audio,language='en-in')
+        print(f"User said: {query}\n")
