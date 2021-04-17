@@ -87,12 +87,41 @@ def speak(audio):
             speak('Opening Water Management System...')
             webbrowser.open("https://console.firebase.google.com/u/0/project/water-management-system-8ab48/settings/serviceaccounts/databasesecrets")
         
+        elif 'play music' in query:
+            speak('Playing the music, sir...')
+            music_dir = 'C:\\Users\\HP\\Music'
+            songs = os.listdir(music_dir)
+            print(songs)
+            os.startfile(os.path.join(music_dir, songs[0]))
+
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is {strTime}")
-            
+
+        elif 'open code' in query:
+            codePath = "C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            os.startfile(codePath)
+
         elif 'Thank you Jarvis!' in query:
             speak('Welcome, sir...')
+
+        elif 'how are you' in query:
+            speak("I am fine, Thank you")
+            speak("How are you, Sir")
+ 
+        elif 'fine' in query or "good" in query:
+            speak("It's good to know that your fine")
+            
+        elif 'email to flash' in query:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                to = ""
+                #sendEmail(to, content)
+                speak("Email has been sent!")
+            except Exception as e:
+                print(e)
+                speak("Sorry my friend madmax, I am not able to send this email")
             
         elif 'exit' in query:
             speak("Thanks for giving me your time")
