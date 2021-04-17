@@ -43,3 +43,18 @@ def speak(audio):
         print("Recognizing...")
         query = r.recognize_google(audio,language='en-in')
         print(f"User said: {query}\n")
+        
+        except Exception as e:
+        print(e)
+
+        print("Say that again please...")
+        return "None"
+    return query
+
+    def sendEmail(to, content):
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.ehlo()
+        server.starttls()
+        server.login('youremail@gmail.com', 'your-password-here')
+        server.sendmail('youremail@gmail.com', to, content)
+        server.close()
