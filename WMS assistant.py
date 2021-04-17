@@ -74,3 +74,26 @@ def speak(audio):
             speak("According to Wikipedia")
             print(results)
             speak(results)
+            
+            elif 'open youtube' in query:
+            speak('Opening Youtube, sir...')
+            webbrowser.open("youtube.com")
+
+        elif 'open google' in query:
+            speak('Opening googel, sir...')
+            webbrowser.open("google.com")
+            
+        elif 'open water system' in query:
+            speak('Opening Water Management System...')
+            webbrowser.open("https://console.firebase.google.com/u/0/project/water-management-system-8ab48/settings/serviceaccounts/databasesecrets")
+        
+        elif 'the time' in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")
+            speak(f"Sir, the time is {strTime}")
+            
+        elif 'Thank you Jarvis!' in query:
+            speak('Welcome, sir...')
+            
+        elif 'exit' in query:
+            speak("Thanks for giving me your time")
+            exit()
