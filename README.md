@@ -24,6 +24,6 @@ After Compiling it, Copy the directory path of the file where it is saved , (usu
 
 Step-3: After copying it, open the proteus model(do not run the model directly) and double click the arduino Uno and copy the path to the "hex file" section in the Dialog box), after this click apply and okay.
 
-Step-4: Now run the model and here the relay is attached to pin -6 , So press "F" for speeding fast the motor and "f" to lower the speed of the motor.
+Step-4: Now run the model and here the relay is attached to pin -6 , So after opening the Virtual Terminal option from the Debug Tab, we will get the black Virtual Screen Window, where we can perform the task to give command, So press "F" for speeding fast the motor and "f" to lower the speed of the motor.
 
 thank you.
